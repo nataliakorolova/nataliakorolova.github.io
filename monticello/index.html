@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Monticello</title>
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/3b973e5e7c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="./js.js"></script>
+</head>
+<body>
+    <div  class="page">
+
+        <!-- HEADER -->
+        <header class="header">
+            <div class="wrapper wrapper--height">
+                <div class="header__inner unchor"><a name="home"></a>
+                    <div class="header__nav">
+                        <div class="nav__logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="241" height="54" viewBox="0 0 241 54">
+                                <path id="Logo" class="cls-1" d="M237.919,101.4l28.619-.252-20.555-35.19-16.792,29.93-4.52.04,19.305-33.566-3.229-5.527L215,101.6l17.439-.153L246.08,77.136l10.81,18.508-16.649.146Zm44.757,5.589L251.367,53.225l0.37-.219,31.31,53.763Zm2.808-33.178V73.759a9.528,9.528,0,0,1,19.055-.052v0.052A9.528,9.528,0,0,1,285.484,73.811Zm14.051,0V73.759a4.672,4.672,0,0,0-4.549-4.912,4.582,4.582,0,0,0-4.473,4.859v0.052a4.667,4.667,0,0,0,4.524,4.912A4.586,4.586,0,0,0,299.535,73.811Zm10.089-9.147H314.2l7.278,9.615V64.664h4.852V82.854h-4.3l-7.556-9.979v9.979h-4.852V64.664Zm26.691,4.418h-5.307V64.664h15.517v4.418h-5.307V82.854h-4.9V69.081Zm14.99-4.418h4.929V82.854h-4.929V64.664Zm10.086,9.147V73.759a9.216,9.216,0,0,1,9.325-9.459,8.589,8.589,0,0,1,7.506,3.794l-3.69,2.936a4.7,4.7,0,0,0-3.866-2.131c-2.476,0-4.22,2.157-4.22,4.807v0.052c0,2.729,1.744,4.86,4.22,4.86a4.8,4.8,0,0,0,3.993-2.209l3.69,2.7a8.857,8.857,0,0,1-7.835,4.106A9.112,9.112,0,0,1,361.391,73.811Zm21.586-9.147h14.229v4.288H387.83v2.754h8.491v3.976H387.83v2.885h9.5v4.288H382.977V64.664Zm19.388,0h4.9V78.437h8.567v4.418h-13.47V64.664Zm18.1,0h4.9V78.437h8.568v4.418h-13.47V64.664Zm16.481,9.147V73.759A9.528,9.528,0,0,1,456,73.707v0.052A9.528,9.528,0,0,1,436.945,73.811Zm14.051,0V73.759a4.672,4.672,0,0,0-4.549-4.912,4.582,4.582,0,0,0-4.473,4.859v0.052a4.667,4.667,0,0,0,4.524,4.912A4.586,4.586,0,0,0,451,73.811ZM266.424,78.482V72.459l4.5,7.069h0.1l4.524-7.121V82.854h4.877V64.664h-5.181l-4.22,7.042-4.22-7.042h-5.181v5.574Zm20.07,14.225h0.678v6.061h-0.678V92.707Zm5.875,0h0.636l3.786,4.857V92.707h0.661v6.061h-0.541L293.03,93.8v4.97h-0.661V92.707Zm11.811,0.631h-2.018V92.707h4.722v0.631h-2.018v5.429H304.18V93.338Zm7.414-.631h4.345V93.33h-3.666V95.4h3.279v0.623h-3.279v2.121h3.708v0.624h-4.387V92.707Zm9.191,0h2.585a2.358,2.358,0,0,1,1.708.606,1.685,1.685,0,0,1,.463,1.194v0.017a1.767,1.767,0,0,1-1.63,1.766l1.845,2.477h-0.833l-1.742-2.355h-1.717v2.355h-0.679V92.707Zm2.524,3.091a1.335,1.335,0,0,0,1.545-1.246V94.533a1.279,1.279,0,0,0-1.536-1.2h-1.854V95.8h1.845Zm7.123-3.091h0.636l3.786,4.857V92.707h0.661v6.061h-0.541l-3.881-4.97v4.97h-0.661V92.707Zm12.446-.044h0.635l2.739,6.1h-0.73l-0.7-1.6h-3.271l-0.713,1.6h-0.695Zm1.674,3.888-1.365-3.092-1.374,3.092h2.739Zm7.14-3.213h-2.018V92.707H354.4v0.631h-2.018v5.429h-0.686V93.338Zm7.475-.631h0.677v6.061h-0.677V92.707Zm5.609,3.047V95.737a3.066,3.066,0,1,1,6.13-.018v0.018A3.066,3.066,0,1,1,364.776,95.754Zm5.426,0V95.737a2.4,2.4,0,0,0-2.37-2.5,2.372,2.372,0,0,0-2.352,2.485v0.018a2.4,2.4,0,0,0,2.37,2.5A2.372,2.372,0,0,0,370.2,95.754Zm5.577-3.047h0.636l3.786,4.857V92.707h0.661v6.061h-0.541L376.44,93.8v4.97h-0.661V92.707Zm12.446-.044h0.636l2.738,6.1H390.87l-0.7-1.6H386.9l-0.713,1.6h-0.695Zm1.675,3.888-1.366-3.092-1.373,3.092H389.9Zm6.324-3.844H396.9v5.428h3.382v0.633h-4.061V92.707Zm14.5,3.047V95.737a3.03,3.03,0,0,1,3.013-3.135,3.146,3.146,0,0,1,2.24.806l-0.437.519a2.549,2.549,0,0,0-1.828-.692,2.359,2.359,0,0,0-2.285,2.485v0.018a2.334,2.334,0,0,0,2.379,2.519,2.817,2.817,0,0,0,1.734-.606V96.143h-1.828V95.529h2.48v2.415a3.621,3.621,0,0,1-2.413.926A2.959,2.959,0,0,1,410.725,95.754Zm10.436-3.047h2.585a2.358,2.358,0,0,1,1.708.606,1.682,1.682,0,0,1,.464,1.194v0.017a1.767,1.767,0,0,1-1.631,1.766l1.845,2.477H425.3l-1.742-2.355H421.84v2.355h-0.679V92.707Zm2.524,3.091a1.336,1.336,0,0,0,1.546-1.246V94.533a1.28,1.28,0,0,0-1.537-1.2H421.84V95.8h1.845Zm6.857-.044V95.737a3.065,3.065,0,1,1,6.129-.018v0.018A3.065,3.065,0,1,1,430.542,95.754Zm5.425,0V95.737a2.4,2.4,0,0,0-2.369-2.5,2.372,2.372,0,0,0-2.353,2.485v0.018a2.4,2.4,0,0,0,2.37,2.5A2.372,2.372,0,0,0,435.967,95.754Zm5.484,0.476V92.707h0.678v3.48a1.777,1.777,0,0,0,1.837,2.043,1.736,1.736,0,0,0,1.812-2V92.707h0.678v3.472A2.507,2.507,0,1,1,441.451,96.231Zm10.05-3.523h2.25A1.961,1.961,0,0,1,456,94.629v0.017a2.078,2.078,0,0,1-2.361,1.983H452.18v2.139H451.5V92.707Zm2.164,3.3a1.429,1.429,0,0,0,1.648-1.334V94.655a1.362,1.362,0,0,0-1.614-1.316H452.18V96h1.485Z" transform="translate(-215 -53)"/>
+                            </svg>
+                        </div>
+                        <input id="menu-toggle-input" class="checkbox" type="checkbox">
+                        <label for="menu-toggle-input" class="nav__toggler-input">
+                            <i class="fas fa-bars" aria-hidden="true"></i>
+                        </label>
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a class="nav__link" href="#about_us">About Us</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#home">Projects</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#home">News</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#home">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="nav__social">
+                            <a class="social-item" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="social-item" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="social-item" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="header__block-slider">
+                        <div class="header__block-text">
+                            <h1 class="header__title">Simple & mordern</h1>
+                            <p class="header__subtitle">We make the world's beautiful every day</p>
+                        </div>
+
+                        <div class="header__block-text">
+                            <h1 class="header__title">Methods & technologies</h1>
+                            <p class="header__subtitle">We are creating the future</p>
+                        </div>
+
+                        <div class="header__block-text">
+                            <h1 class="header__title">Convenient & simple</h1>
+                            <p class="header__subtitle">We do simplicity in detail</p>
+                        </div>
+                    </div>
+                    <div class="header__scroll">
+                        <a href="#top" class="scroll__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+                                <image id="_" data-name="" width="40" height="40" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAQAAAAm93DmAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfkAQMPEi7Bqk9LAAACh0lEQVRIx62XO1MTURTHf7usLyA4A6EBZSySiAWPDwARB6XAL0CB7cpAZQoZPoGPgj4pIQMllY2SEZGSGTE0PFKoCFWgQMHHoH+LJRASs5vHntPs3Xvuf8+5595z/muIkmIQoYswbbRwFfjJPntss84WJZcZJWaCPGSAIz6ywVey/ACuEaSdO/TQwBKvyJYLGGCUKCkW+VTCjVvcZ5BlknwrmlOh9mlWtpqEhwZka1b9he8vDus0rrjCnmA5DSuucdXlv8sP+QqTmLzkmPKlnqf85QW/ivewjil+M81JBXAAFjEu84w/ztA8mxjDqAIOTpjGYKwwKf1KqL7svSvUeiUUzU9KQLMKVQ2HUEhJXRc6DfkRK2QqDjZfMiwzmgu5VfNlnDsvbdK8Wh0Ph0lxWJN/AIekGAYTgwHe1AwH8JoBDJMIx3z2BfALR0RMuvngCxzAGl0mITZ9A9wkbNLOjm+AO7SbNHPgarSKbeAoNquutvs0owVdcj1ftqRJAE1Ksl1tLS1YgNw+aiQEcQE857GRcDUG0Jz7LQEcLyUbcL8tAc1ZHNDsdU8cv4yEZ1JaOLDY5WbJZnS+HwmPnXHkBrsmGW57W5YpnWybpOn1DbCHdZMtGujwBa6DRrZMxBJDvgAOseQkO+h1dMossHMKOgU2y3tGavZvhBWynDWppA9NKpBPRaKK19RG47rrPOca/TJpYlhVBWsRI807Z3DOHOLAkyogLWKnqwEKyNIU1EqWCuvZRMV0bkLWhepUZBTVjGwnYx6lytZMjtGc6/8ocROj9JFisWR77eABg6yQLC58bqT9Ht9ZY4PdC6S9k14aeVsJaT+bI0I3IdoInv5WZNkjQ9rtt+IfnPV7i+92H/cAAAAASUVORK5CYII="/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <ul class="dots-header">
+                        <!-- <a href="#home" class="dots__link"><li class="dots-header__item dots-header__item--active"></li></a>
+                        <a href="#projects" class="dots__link"><li class="dots-header__item"></li></a>
+                        <a href="#news" class="dots__link"><li class="dots-header__item"></li></a>
+                        <a href="#gallery" class="dots__link"><li class="dots-header__item"></li></a>
+                        <a href="#contacts" class="dots__link"><li class="dots-header__item"></li></a> -->
+                        <li class="dots-header__item dots-header__item--active"><a href="#home" class="dots__link"></a>
+                        </li>
+                        <li class="dots-header__item"><a href="#projects" class="dots__link"></a></li>
+                        <li class="dots-header__item"><a href="#news" class="dots__link"></a></li>
+                        <li class="dots-header__item"><a href="#gallery" class="dots__link"></a></li>
+                        <li class="dots-header__item"><a href="#contacts" class="dots__link"></a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </header>
+
+        <!--MAIN-->
+        <main>
+
+            <!--SECTION-->
+            <section class="block-info">
+                <div class="wrapper">
+                    <div class="block-info__inner unchor"><a name="projects"></a><a name="top"></a>
+                        <div class="block-info__title">
+                            <hr class="block-info__title-line"></hr>
+                            <h2 class="block-info__title-text">What we do</h2>
+                        </div> 
+                        <div class="block-info__top">
+                            <div class="block-info__top-left">
+                                <div class="block-info__img-left">
+                                    <img src="./images/Frame-1.jpg" alt="img">
+                                </div>
+                            </div>
+                            <div class="block-info__top-right">
+                                <div class="mini-block">
+                                    <h2 class="mini-block__title">One world</h2>
+                                    <h2 class="mini-block__title mini-block__title--bold">Trade center</h2>
+                                    <p class="mini-block__text">Increasing prosperity in our lives can be accomplished by having the right frame of mind. 
+                                        The truth is, our thoughts are very powerful.
+                                    </p>
+                                    <div class="mini-block__button">
+                                        <button class="btn">More details</button>
+                                    </div>
+                                    <div class="mini-block__source">
+                                        <a class="icon-block" href=""><i class="fas fa-map-marker-alt"></i></a>
+                                        <p class="mini-block__source-text">New York City, United States - 1776 feet</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-info__bottom">
+                            <div class="block-info__bottom-left">
+                                <div class="mini-block">
+                                    <h2 class="mini-block__title">International</h2>
+                                    <h2 class="mini-block__title mini-block__title--bold">Commerce Centre</h2>
+                                    <p class="mini-block__text">Successful businesses have many things in common, today we’ll look at the big 
+                                        ‘R’ of recognition and how a digital advertising network may help.
+                                    </p>
+                                    <div class="mini-block__button">
+                                        <button class="btn">More details</button>
+                                    </div>
+                                    <div class="mini-block__source">
+                                        <a class="icon-block" href=""><i class="fas fa-map-marker-alt"></i></a>
+                                        <p class="mini-block__source-text">Hong Kong - 1588 Feet</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block-info__bottom-right">
+                                <div class="block-info__img-right">
+                                    <img src="./images/Frame-2.jpg" alt="img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--SECTION-->
+            <section class="block-slider unchor"><a name="news"></a>
+                <div class="wrapper">
+                    <div class="block-slider__inner">
+                        <div class="block-slider__title">
+                            <hr class="block-slider__title-line"></hr>
+                            <h2 class="block-slider__title-text">Latest news</h2>
+                        </div>
+                        <div class="block-slider__slick">
+                            <div class="block-slider__list">
+                                <div class="block-slider__item">
+                                    <div class="item-top">
+                                        <div class="item-top__img">
+                                            <img class="item-top__photo" src="./images/lauren-mancke-1.jpg" alt="">
+                                        </div>
+                                        <div class="item-top__content">
+                                            <h2 class="item-top__title">See The Unmatched Beauty Of The Great. Lakes.</h2>
+                                            <p class="item-top__text">Free directories: directories are perfect for customers that are...</p>
+                                        </div>
+                                    </div>
+                                    <div class="item-description">
+                                        <img class="item-description__icon" src="./images/Ellipse-1.jpg" alt="">
+                                        <div class="item-description__info">
+                                            <p class="item-description__author">Isaac Dunn</p>
+                                            <p class="item-description__date">09 feb 2017</p>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="block-slider__item">
+                                    <div class="item-top">
+                                        <div class="item-top__img">
+                                            <img class="item-top__photo" src="./images/matthew-hamilton-2.jpg" alt="">
+                                        </div>
+                                        <div class="item-top__content">
+                                            <h2 class="item-top__title">Effective Advertising Pointers.</h2>
+                                            <p class="item-top__text">Having a home based business is a wonderful asset to your life.</p>
+                                        </div>
+                                    </div>
+                                    <div class="item-description">
+                                        <img class="item-description__icon" src="./images/Ellipse-2.jpg" alt="">
+                                        <div class="item-description__info">
+                                            <p class="item-description__author">Dominic Freeman</p>
+                                            <p class="item-description__date">24 apr 2017</p>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="block-slider__item">
+                                    <div class="item-top">
+                                        <div class="item-top__img">
+                                            <img  class="item-top__photo" src="./images/joel-filipe-3.jpg" alt="">
+                                        </div>
+                                        <div class="item-top__content">
+                                            <h2 class="item-top__title">Hypnotize Yourself Into The Ghost.</h2>
+                                            <p class="item-top__text">There are many things that are important to catalog design...</p>
+                                        </div>
+                                    </div>
+                                    <div class="item-description">
+                                        <img class="item-description__icon" src="./images/Ellipse-3.jpg" alt="">
+                                        <div class="item-description__info">
+                                            <p class="item-description__author">Alice Ward</p>
+                                            <p class="item-description__date">30 dec 2017</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="block-slider__item">
+                                    <div class="item-top">
+                                        <div class="item-top__img">
+                                            <img  class="item-top__photo" src="./images/lauren-mancke-1.jpg" alt="">
+                                        </div>
+                                        <div class="item-top__content">
+                                            <h2 class="item-top__title">See The Unmatched Beauty Of The Great. Lakes.</h2>
+                                            <p class="item-top__text">Free directories: directories are perfect for customers that are...</p>
+                                        </div>
+                                    </div>
+                                    <div class="item-description">
+                                        <img class="item-description__icon" src="./images/Ellipse-1.jpg" alt="">
+                                        <div class="item-description__info">
+                                            <p class="item-description__author">Isaac Dunn</p>
+                                            <p class="item-description__date">09 feb 2017</p>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="block-slider__item">
+                                    <div class="item-top">
+                                        <div class="item-top__img">
+                                            <img  class="item-top__photo" src="./images/matthew-hamilton-2.jpg" alt="">
+                                        </div>
+                                        <div class="item-top__content">
+                                            <h2 class="item-top__title">Effective Advertising Pointers.</h2>
+                                            <p class="item-top__text">Having a home based business is a wonderful asset to your life.</p>
+                                        </div>
+                                    </div>
+                                    <div class="item-description">
+                                        <img class="item-description__icon" src="./images/Ellipse-2.jpg" alt="">
+                                        <div class="item-description__info">
+                                            <p class="item-description__author">Dominic Freeman</p>
+                                            <p class="item-description__date">24 apr 2017</p>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                            <span class="slider-btn slider-btn--prev">
+                                <svg class="icon" width="5px" height="8px">
+                                    <text font-family="FontAwesome" fill="rgb(255, 255, 255)" font-size="14px" x="0px" y="8.03200000000015px">&#61700;</text>
+                               </svg>
+                            </span>
+    
+                            <span class="slider-btn slider-btn--next">
+                                <svg class="icon" width="5px" height="8px">
+                                    <text font-family="FontAwesome" fill="rgb(255, 255, 255)" font-size="14px" x="0px" y="8.03200000000015px">&#61701;</text>
+                               </svg>                        
+                            </span>
+
+                            <span class="slick-dots">
+                                <div class="slick-dots__castom"></div>
+                                <div class="slick-dots__castom"></div>
+                                <div class="slick-dots__castom"></div>
+                                <div class="slick-dots__castom"></div>
+                                <div class="slick-dots__castom"></div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--SECTION-->
+            <section class="block-gallery unchor"><a name="gallery"></a>
+                <div class="wrapper">
+                    <div class="block-gallery__inner">
+                        <div class="block-gallery__title">
+                            <hr class="block-gallery__title-line"></hr>
+                            <h2 class="block-gallery__title-text">Gallery</h2>
+                        </div>
+                        <div class="block-gallery__list">
+                            <div class="block-gallery__item block-gallery__item--wide">
+                                <img  class="block-gallery__item-photo--wide" src="./images/Rectangle-1.jpg" alt="">
+                                <svg class="block-gallery__item-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
+                                    <image id="_360" data-name="360" width="80" height="80" xlink:href="data:img/png;base64,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"/>
+                                </svg>
+                            </div>
+                            <div class="block-gallery__item">
+                                <img  class="block-gallery__item-photo block-gallery__item-photo--right block-gallery__item-photo--bottom" src="./images/Rectangle-2.jpg" alt="">
+                                <img  class="block-gallery__item-photo block-gallery__item-photo--left block-gallery__item-photo--bottom" src="./images/Rectangle-3.jpg" alt="">
+                                <img  class="block-gallery__item-photo block-gallery__item-photo--right block-gallery__item-photo--top" src="./images/Rectangle-4.jpg" alt="">
+                                <img  class="block-gallery__item-photo block-gallery__item-photo--left block-gallery__item-photo--top" src="./images/Rectangle-5.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="block-gallery__button">
+                            <button class="btn">See more</button>
+                        </div>
+                    </div>
+                </div>  
+            </section>
+
+            <!--SECTION-->
+            <section class="block-map">
+                <div class="wrapper">
+                    <div class="block-map__inner">
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--FOOTER-->
+        <footer class="block-footer">
+            <div class="block-footer__wrapper">
+                <div class="block-footer__inner">
+                    <div class="block-footer__contact unchor" id="contacts">
+                        <div class="block-footer__contact-inner">
+                            <div class="block-footer__title">
+                                <hr class="block-footer__title-line"></hr>
+                                <h2 class="block-footer__title-text">Get in touch</h2>
+                            </div>
+                            <div class="block-footer__contact-block">
+                                <div class="block-footer__info">
+                                    <div class="block-footer__block-info">
+                                        <div class="block-footer__info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                        <div class="block-footer__info-title">91 Nolan Extensions Suite 670</div>
+                                    </div>
+                                    <div class="block-footer__block-info">
+                                        <div class="block-footer__info-icon"><i class="fas fa-phone-alt"></i></div>
+                                        <div class="block-footer__info-title">+001 356-868-2454</div>
+                                    </div>
+                                    <div class="block-footer__block-info">
+                                        <div class="block-footer__info-icon"><i class="fas fa-inbox"></i></div>
+                                        <div class="block-footer__info-title">gahuy93@gmail.com</div>
+                                    </div>
+                                    <div class="block-footer__block-info">
+                                        <div class="block-footer__info-icon"><i class="far fa-clock"></i></div>
+                                        <div class="block-footer__info-title">From 07:05AM to 19:30PM</div>
+                                    </div>
+                                </div>
+
+                                <div class="block-footer__form">
+                                    <form action="#" class="form-contact" method="GET">
+                                        <div class="block-footer__input-wrapper">
+                                            <input type="text" name="name" minlength="5" placeholder="Your name..."
+                                            class="form-input" required>
+                                        </div>
+                                        <div class="block-footer__input-wrapper">
+                                            <input type="email" name="email" placeholder="E-mail address..."
+                                            class="form-input" required>
+                                        </div>
+                                        <div class="block-footer__button">
+                                            <input type="submit" class="btn" value="Submit">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-footer__top">
+                        <div class="block-footer__logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="241" height="54" viewBox="0 0 241 54">
+                              <defs>
+                                  <style>
+                                    .cls-1 {
+                                      fill: #fff;
+                                      fill-rule: evenodd;
+                                    }
+                                  </style>
+                                </defs>
+                                <path id="Logo" class="cls-1" d="M237.919,101.4l28.619-.252-20.555-35.19-16.792,29.93-4.52.04,19.305-33.566-3.229-5.527L215,101.6l17.439-.153L246.08,77.136l10.81,18.508-16.649.146Zm44.757,5.589L251.367,53.225l0.37-.219,31.31,53.763Zm2.808-33.178V73.759a9.528,9.528,0,0,1,19.055-.052v0.052A9.528,9.528,0,0,1,285.484,73.811Zm14.051,0V73.759a4.672,4.672,0,0,0-4.549-4.912,4.582,4.582,0,0,0-4.473,4.859v0.052a4.667,4.667,0,0,0,4.524,4.912A4.586,4.586,0,0,0,299.535,73.811Zm10.089-9.147H314.2l7.278,9.615V64.664h4.852V82.854h-4.3l-7.556-9.979v9.979h-4.852V64.664Zm26.691,4.418h-5.307V64.664h15.517v4.418h-5.307V82.854h-4.9V69.081Zm14.99-4.418h4.929V82.854h-4.929V64.664Zm10.086,9.147V73.759a9.216,9.216,0,0,1,9.325-9.459,8.589,8.589,0,0,1,7.506,3.794l-3.69,2.936a4.7,4.7,0,0,0-3.866-2.131c-2.476,0-4.22,2.157-4.22,4.807v0.052c0,2.729,1.744,4.86,4.22,4.86a4.8,4.8,0,0,0,3.993-2.209l3.69,2.7a8.857,8.857,0,0,1-7.835,4.106A9.112,9.112,0,0,1,361.391,73.811Zm21.586-9.147h14.229v4.288H387.83v2.754h8.491v3.976H387.83v2.885h9.5v4.288H382.977V64.664Zm19.388,0h4.9V78.437h8.567v4.418h-13.47V64.664Zm18.1,0h4.9V78.437h8.568v4.418h-13.47V64.664Zm16.481,9.147V73.759A9.528,9.528,0,0,1,456,73.707v0.052A9.528,9.528,0,0,1,436.945,73.811Zm14.051,0V73.759a4.672,4.672,0,0,0-4.549-4.912,4.582,4.582,0,0,0-4.473,4.859v0.052a4.667,4.667,0,0,0,4.524,4.912A4.586,4.586,0,0,0,451,73.811ZM266.424,78.482V72.459l4.5,7.069h0.1l4.524-7.121V82.854h4.877V64.664h-5.181l-4.22,7.042-4.22-7.042h-5.181v5.574Zm20.07,14.225h0.678v6.061h-0.678V92.707Zm5.875,0h0.636l3.786,4.857V92.707h0.661v6.061h-0.541L293.03,93.8v4.97h-0.661V92.707Zm11.811,0.631h-2.018V92.707h4.722v0.631h-2.018v5.429H304.18V93.338Zm7.414-.631h4.345V93.33h-3.666V95.4h3.279v0.623h-3.279v2.121h3.708v0.624h-4.387V92.707Zm9.191,0h2.585a2.358,2.358,0,0,1,1.708.606,1.685,1.685,0,0,1,.463,1.194v0.017a1.767,1.767,0,0,1-1.63,1.766l1.845,2.477h-0.833l-1.742-2.355h-1.717v2.355h-0.679V92.707Zm2.524,3.091a1.335,1.335,0,0,0,1.545-1.246V94.533a1.279,1.279,0,0,0-1.536-1.2h-1.854V95.8h1.845Zm7.123-3.091h0.636l3.786,4.857V92.707h0.661v6.061h-0.541l-3.881-4.97v4.97h-0.661V92.707Zm12.446-.044h0.635l2.739,6.1h-0.73l-0.7-1.6h-3.271l-0.713,1.6h-0.695Zm1.674,3.888-1.365-3.092-1.374,3.092h2.739Zm7.14-3.213h-2.018V92.707H354.4v0.631h-2.018v5.429h-0.686V93.338Zm7.475-.631h0.677v6.061h-0.677V92.707Zm5.609,3.047V95.737a3.066,3.066,0,1,1,6.13-.018v0.018A3.066,3.066,0,1,1,364.776,95.754Zm5.426,0V95.737a2.4,2.4,0,0,0-2.37-2.5,2.372,2.372,0,0,0-2.352,2.485v0.018a2.4,2.4,0,0,0,2.37,2.5A2.372,2.372,0,0,0,370.2,95.754Zm5.577-3.047h0.636l3.786,4.857V92.707h0.661v6.061h-0.541L376.44,93.8v4.97h-0.661V92.707Zm12.446-.044h0.636l2.738,6.1H390.87l-0.7-1.6H386.9l-0.713,1.6h-0.695Zm1.675,3.888-1.366-3.092-1.373,3.092H389.9Zm6.324-3.844H396.9v5.428h3.382v0.633h-4.061V92.707Zm14.5,3.047V95.737a3.03,3.03,0,0,1,3.013-3.135,3.146,3.146,0,0,1,2.24.806l-0.437.519a2.549,2.549,0,0,0-1.828-.692,2.359,2.359,0,0,0-2.285,2.485v0.018a2.334,2.334,0,0,0,2.379,2.519,2.817,2.817,0,0,0,1.734-.606V96.143h-1.828V95.529h2.48v2.415a3.621,3.621,0,0,1-2.413.926A2.959,2.959,0,0,1,410.725,95.754Zm10.436-3.047h2.585a2.358,2.358,0,0,1,1.708.606,1.682,1.682,0,0,1,.464,1.194v0.017a1.767,1.767,0,0,1-1.631,1.766l1.845,2.477H425.3l-1.742-2.355H421.84v2.355h-0.679V92.707Zm2.524,3.091a1.336,1.336,0,0,0,1.546-1.246V94.533a1.28,1.28,0,0,0-1.537-1.2H421.84V95.8h1.845Zm6.857-.044V95.737a3.065,3.065,0,1,1,6.129-.018v0.018A3.065,3.065,0,1,1,430.542,95.754Zm5.425,0V95.737a2.4,2.4,0,0,0-2.369-2.5,2.372,2.372,0,0,0-2.353,2.485v0.018a2.4,2.4,0,0,0,2.37,2.5A2.372,2.372,0,0,0,435.967,95.754Zm5.484,0.476V92.707h0.678v3.48a1.777,1.777,0,0,0,1.837,2.043,1.736,1.736,0,0,0,1.812-2V92.707h0.678v3.472A2.507,2.507,0,1,1,441.451,96.231Zm10.05-3.523h2.25A1.961,1.961,0,0,1,456,94.629v0.017a2.078,2.078,0,0,1-2.361,1.983H452.18v2.139H451.5V92.707Zm2.164,3.3a1.429,1.429,0,0,0,1.648-1.334V94.655a1.362,1.362,0,0,0-1.614-1.316H452.18V96h1.485Z" transform="translate(-215 -53)"/>
+                              </svg> 
+                        </div>
+                        <div class="block-footer__social">
+                            <div class="social-item">
+                                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                            <div class="social-item">
+                                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                            </div>
+                            <div class="social-item">
+                                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block-footer__bottom">
+                        <p class="block-footer__bottom-text">Copyright &copy; 2017 Monticello </p>
+                        <p class="vl block-footer__bottom-text">Made with &hearts; by Ga Huy</p>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./slick/slick.min.js"></script>
+</body>
+</html>
